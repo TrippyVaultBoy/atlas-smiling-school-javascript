@@ -92,6 +92,33 @@
           }
         });
       });
+
+      //<!-- Tutorials Script -->
+      $(document).ready(function () {
+        $.ajax({
+          url: 'https://smileschool-api.hbtn.info/popular-tutorials',
+          method: 'GET',
+          dataType: 'json',
+          success: function (data) {
+
+            $('#tutorials-loading-spinner').hide();
+
+            data.forEach(function (item, index) {
+              let active;
+              if (index === 0) {
+                active = 'active';
+              } else {
+                active = '';
+              }
+              const html = ``;
+              $('.popular .carousel-inner').append(html);
+            });
+          },
+          error: function (xhr, status, error) {
+            console.error('Failed to load tutorials:', error)
+          }
+        });
+      });
     </script>
   </head>
   <body class="body">
