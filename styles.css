@@ -295,6 +295,10 @@
   color: var(--background-color);
 }
 
+.spinner-border .text-custom{
+  color: var(--main-color);
+}
+
 .section .card {
   border: 0;
   width: 16rem;

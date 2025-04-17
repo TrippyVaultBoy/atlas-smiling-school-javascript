@@ -100,7 +100,7 @@
           method: 'GET',
           dataType: 'json',
           success: function (data) {
-            $('#tutorials-loading-spinner').hide();
+            $('.popular-loading-spinner').hide();
             $('.popular .carousel-inner').empty();
             
             for (let i = 0; i < data.length; i += 4) {
@@ -338,8 +338,8 @@
             data-ride="carousel"
           >
 
-            <div id="tutorials-loading-spinner" class="text-center my-5">
-              <div class="spinner-border text-light" role="status">
+            <div class="popular-loading-spinner text-center my-5">
+              <div class="spinner-border text-custom" role="status">
               </div>
             </div>
 
@@ -453,6 +453,12 @@
             class="carousel slide"
             data-ride="carousel"
           >
+
+            <div class="popular-loading-spinner text-center my-5">
+              <div class="spinner-border text-custom" role="status">
+              </div>
+            </div>
+
             <div class="carousel-inner">
               <!-- Cards go here -->
             </div>
